@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     string day;
     int hour, minute, duration;
-    double costPerMinute, totalCost;
+    double minute_cost, total_cost;
 
     cout << "Please enter the day of the week (Mo, Tu, We, Th, Fr, Sa, Su): ";
     cin >> day;
@@ -16,21 +16,21 @@ int main() {
 
     if (day == "Sa" || day == "Su") {
         // Weekend rate
-        costPerMinute = 0.15;
+        minute_cost = 0.15;
     } else {
         // Weekday rate depends on the time
         if (hour >= 8 && hour < 18) {
             // Daytime rate
-            costPerMinute = 0.40;
+            minute_cost = 0.40;
         } else {
             // Off-hours rate
-            costPerMinute = 0.25;
+            minute_cost = 0.25;
         }
     }
 
-    totalCost = costPerMinute * duration;
+    total_cost = minute_cost * duration;
 
-    cout << "The cost of the call is: $" << totalCost << endl;
+    cout << "The cost of the call is: $" << total_cost << endl;
 
     return 0;
 }
