@@ -15,15 +15,11 @@ int main() {
     cin >> duration;
 
     if (day == "Sa" || day == "Su") {
-        // Weekend rate
         minute_cost = 0.15;
     } else {
-        // Weekday rate depends on the time
         if (hour >= 8 && hour < 18) {
-            // Daytime rate
             minute_cost = 0.40;
         } else {
-            // Off-hours rate
             minute_cost = 0.25;
         }
     }
