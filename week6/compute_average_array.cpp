@@ -20,16 +20,16 @@ int main()
     }
 
     // Read the grades of students using the modified loop
-    for (int i = 1; i < num_students + 1; i++)
+    for (int i = 0; i < num_students; i++)
     {
         bool validGrade = false;
         while (!validGrade)
         {
-            cout << "Enter the grade of student " << i << ": ";
-            cin >> grades_list[i - 1];
+            cout << "Enter the grade of student " << i + 1 << ": ";
+            cin >> grades_list[i];
 
             // Check if the grade is valid
-            if (grades_list[i - 1] < 0 || grades_list[i - 1] > 100)
+            if (grades_list[i] < 0 || grades_list[i] > 100)
             {
                 cout << "Invalid grade. Please enter a grade between 0 and 100.\n";
             }
@@ -46,13 +46,13 @@ int main()
     {
         sum += grades_list[i];
     }
-    double average = static_cast<double>(sum) / num_students;
+    double average = (double)sum / (double)num_students;
 
     // Print the average
     cout << "The average is: " << average << endl;
 
     // Print the grades and students above the average
-    cout << "The grades and students above the average are: \n";
+    cout << "The students and grades above the average are: \n";
     for (int i = 0; i < num_students; i++)
     {
         if (grades_list[i] > average)
