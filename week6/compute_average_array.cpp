@@ -19,7 +19,7 @@ int main()
         return 0;
     }
 
-    // Read the grades of students using the modified loop
+    // Read the grades of students
     for (int i = 0; i < num_students; i++)
     {
         bool validGrade = false;
