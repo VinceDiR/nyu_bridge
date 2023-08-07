@@ -1,10 +1,11 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
     int n;
-    std::cout << "Enter the size of the Barn Door: ";
-    std::cin >> n;
+    cout << "Enter the size of the Barn Door: ";
+    cin >> n;
 
     for (int i = 0; i < n; i++)
     {
@@ -12,18 +13,18 @@ int main()
         {
             if (i == 0 || i == n - 1 || j == 0 || j == n - 1)
             {
-                std::cout << "#";
+                cout << "#";
             }
             else if (i - 1 == j - 1 || n - i - 2 == j - 1)
             {
-                std::cout << "$";
+                cout << "$";
             }
             else
             {
-                std::cout << " ";
+                cout << " ";
             }
         }
-        std::cout << "\n";
+        cout << "\n";
     }
     return 0;
 }
