@@ -2,3 +2,4 @@
 .DS_Store
 a.out
 exam_env_only/exam_env_only.code-workspace
+.vscode/*

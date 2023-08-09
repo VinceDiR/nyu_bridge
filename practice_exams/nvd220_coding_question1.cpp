@@ -18,7 +18,7 @@ int main()
 
         if (i == -n + 1 || i == n - 1)
         {
-            cout << char(letter + n - abs_i - 1) << "\n";
+            cout << char(letter + n - abs_i - 1) << endl;
             continue;
         }
         cout << char(letter + n - abs_i - 1);
@@ -26,7 +26,7 @@ int main()
         {
             cout << " ";
         }
-        cout << char(letter + n - abs_i - 1) << "\n";
+        cout << char(letter + n - abs_i - 1) << endl;
     }
     return 0;
 }
