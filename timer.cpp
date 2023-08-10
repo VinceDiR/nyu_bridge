@@ -11,10 +11,10 @@ int main()
     // Ask the user for the duration in minutes
     cout << "Enter the duration in minutes: ";
     cin >> minutes;
-    int totalSeconds = minutes * 60;
+    int total_seconds = minutes * 60;
 
     // Start the timer countdown
-    for (int i = totalSeconds; i >= 0; --i)
+    for (int i = total_seconds; i >= 0; --i)
     {
         cout << "\rTime left: " << i / 60 << " minutes " << i % 60 << " seconds" << flush;
         this_thread::sleep_for(chrono::seconds(1));
