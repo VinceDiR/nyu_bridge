@@ -1,0 +1,25 @@
+Operators used while working with pointers:
+
+1. &var - "Address of"
+
+2. *pointer - Dereferencing, accessing, follow the pointer
+
+3. Pointer arithmetic ++ , --
+
+Pointer Use Cases:
+
+1. Extend the syntax we have to work with arrays
+
+2. Alternate way to change the values of variables that are out of active scope.
+
+3. Dynamic memory allocation
+
+4. Organizing data in memory in linked structures
+
+Pointers and Arrays:
+
+int arr[6] = {10, -10, 0, 5, 20, 3}
+
+void func(int *arr, etc) {
+    
+}
