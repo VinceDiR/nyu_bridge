@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int factorial(int n);
+
+int main()
+{
+    int n;
+    cout << "Enter a positive integer: ";
+    cin >> n;
+    if (n < 0)
+    {
+        cout << "Please enter a non-negative integer." << endl;
+    }
+    else
+    {
+        cout << "Factorial of " << n << " is " << factorial(n) << endl;
+    }
+    return 0;
+}
+
+int factorial(int n)
+{
+    return (n == 0) ? 1 : n * factorial(n - 1);
+}
